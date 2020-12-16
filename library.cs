@@ -75,6 +75,7 @@ namespace HashCode2020
                 uint idb;
                     foreach (book b in book.ListBooks)
                     {
+                        idb = b.id;
                         if (i >= numberOfBooks) break;
 
                         idb = b.id;
