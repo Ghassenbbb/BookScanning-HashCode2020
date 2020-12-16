@@ -126,7 +126,6 @@ namespace HashCode2020
             /* End List Creation */
 
 
-
             Console.WriteLine($"INPUT FILE has {numBooks} Books, {numLib} Libraries, {numDays} Days.");
             Console.WriteLine($"AVG : {avgNumBooks} is avgNumBooks, {avgSignDays} is avgSignDays, {avgScanBooks} is avgScanBooks, {avgTopBooks} is avgTopBooks");
             Console.WriteLine($"Number of library objects in the libraries list : {library.libList.Count}");
