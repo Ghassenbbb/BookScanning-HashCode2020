@@ -75,9 +75,9 @@ namespace HashCode2020
                 uint idb;
                     foreach (book b in book.ListBooks)
                     {
-                        idb = b.id;
                         if (i >= numberOfBooks) break;
 
+                        idb = b.id;
                         if (Array.Exists(L.books, e => e == idb) && !selected.uidBook.Contains(idb))
                         {
                             SelectedLib.books[i] = idb;

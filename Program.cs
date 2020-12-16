@@ -131,9 +131,10 @@ namespace HashCode2020
             Console.WriteLine($"AVG : {avgNumBooks} is avgNumBooks, {avgSignDays} is avgSignDays, {avgScanBooks} is avgScanBooks, {avgTopBooks} is avgTopBooks");
             Console.WriteLine($"Number of library objects in the libraries list : {library.libList.Count}");
             Console.WriteLine($"Number of book objects in the books list : {book.ListBooks.Count}");
+            Console.WriteLine("");
+            Console.Write("The process may take few minutes, please wait");
 
             library.OrderLibList();
-
             library.unnaturalSelection();
 
             string datetime = DateTime.Now.ToString("yyyyMMdd_hhmmss");
@@ -147,10 +148,10 @@ namespace HashCode2020
                 sw.WriteLine(S.idLib.ToString()+" "+S.sNumOfBook.ToString());
                 sw.WriteLine(string.Join(" ", S.books));
             }
-
             sw.Close();
 
-            Console.WriteLine(filename+" Solution File Created !");
+            Console.WriteLine("");
+            Console.WriteLine("SUCCESSFULLY COMPLETED : " + filename+" Solution File Created !");
 
         }
     }
